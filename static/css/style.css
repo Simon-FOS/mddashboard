@@ -1,0 +1,131 @@
+:root {
+    --coffee: #6F4E37;
+    --light-coffee: #A68A64;
+    --dark-coffee: #3E2723;
+    --cotton: #F5F5F5;
+    --cream: #F9F6F0;
+}
+
+/* Background Colors */
+.bg-coffee {
+    background-color: var(--coffee) !important;
+}
+
+.bg-light-coffee {
+    background-color: var(--light-coffee) !important;
+}
+
+.bg-cotton {
+    background-color: var(--cotton) !important;
+}
+
+/* Text Colors */
+.text-coffee {
+    color: var(--coffee) !important;
+}
+
+.text-light-coffee {
+    color: var(--light-coffee) !important;
+}
+
+.text-cotton {
+    color: var(--cotton) !important;
+}
+
+/* Button Colors */
+.btn-coffee {
+    background-color: var(--coffee);
+    border-color: var(--coffee);
+    color: white;
+}
+
+.btn-coffee:hover {
+    background-color: var(--dark-coffee);
+    border-color: var(--dark-coffee);
+    color: white;
+}
+
+.btn-outline-coffee {
+    color: var(--coffee);
+    border-color: var(--coffee);
+}
+
+.btn-outline-coffee:hover {
+    background-color: var(--coffee);
+    color: white;
+}
+
+.btn-cotton {
+    background-color: var(--cotton);
+    border-color: var(--cotton);
+    color: var(--coffee);
+}
+
+.btn-cotton:hover {
+    background-color: #e0e0e0;
+    border-color: #e0e0e0;
+    color: var(--coffee);
+}
+
+/* Sidebar Styles */
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .nav-link {
+    margin-bottom: 5px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: all 0.3s;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background-color: var(--light-coffee);
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: var(--cotton);
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-header {
+    border-radius: 0 !important;
+}
+
+/* Table Styles */
+.table th {
+    background-color: var(--cream);
+}
+
+/* Admin Profile */
+.admin-profile {
+    border-top: 1px solid var(--light-coffee);
+    padding-top: 15px;
+    margin-top: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+    .sidebar {
+        position: static;
+        height: auto;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+}
